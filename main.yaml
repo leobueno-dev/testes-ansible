@@ -4,9 +4,8 @@
   - raspelyte
   gather_facts: no
   become: yes
-  strategy: free
   tasks:
-    - name: "See the mesdaemon.service facts as they are"
+    - name: "Start mesdaemon service"
       service:
         name: mesdaemon.service
         state: started
