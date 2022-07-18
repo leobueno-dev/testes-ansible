@@ -1,0 +1,12 @@
+---
+- hosts: 
+  - raspfundimisa
+  - raspelyte
+  gather_facts: no
+  become: yes
+  strategy: free
+  tasks:
+    - name: "See the mesdaemon.service facts as they are"
+      service:
+        name: mesdaemon.service
+        state: started
