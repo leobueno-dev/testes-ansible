@@ -1,0 +1,10 @@
+[all:vars]
+ansible_user=user
+ansible_ssh_pass=pass
+
+[raspfundimisa]
+FUN-MMA001 ansible_host=1.1.1.1
+
+
+[raspelyte]
+ELY-CUH003 ansible_host=8.8.8.8
