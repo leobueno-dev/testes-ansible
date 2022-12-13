@@ -1,0 +1,19 @@
+stage: "production"
+workers: 2
+gpio:
+  pin: GPIO26
+  chip: gpiochip0
+  listener_params:
+    edge_detection: both  # both|none|falling|rising
+    bias: none            # none|disabled|pull-down|pull-up
+    debounce: 1ms
+sender:
+  address: 
+  timeout: 5s
+  datasource: 
+  jwt_secret: 
+logger:
+  level: debug
+  format: text
+daemon:
+  pid: mes.pid

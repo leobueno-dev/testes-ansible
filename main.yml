@@ -1,0 +1,13 @@
+#!/usr/bin/env ansible-playbook
+
+- name: "Verifica se o serviço do MES está ativo nas rasp"
+  hosts:
+    - raspfundimisa
+    - raspelyte
+  gather_facts: false
+  become: true
+  tasks:
+    - name: Start mesdaemon service
+      ansible.builtin.systemd:
+        state: started
+        name: mesdaemon.service
