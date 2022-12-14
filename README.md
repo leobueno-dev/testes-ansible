@@ -1,4 +1,5 @@
-# mes-ansible
+# Ansible testes
+Primeiros testes com ansible, me aventurando com a tecnologia.
 
 > criar arquivo de hosts
 
